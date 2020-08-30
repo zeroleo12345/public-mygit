@@ -13,4 +13,4 @@ sed -i'' 's/^#*ClientAliveCountMax [0-9]\{1,9\}$/ClientAliveCountMax 3/g' /etc/s
 sed -i'' 's/^#*MaxSessions [0-9]\{1,9\}$/MaxSessions 30/g' /etc/ssh/sshd_config
 
 set -o verbose
-diff  /etc/ssh/sshd_config  /etc/ssh/sshd_config.bak
+diff  /etc/ssh/sshd_config.bak  /etc/ssh/sshd_config
