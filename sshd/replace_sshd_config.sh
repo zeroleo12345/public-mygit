@@ -5,6 +5,7 @@ cp  /etc/ssh/sshd_config  /etc/ssh/sshd_config.bak
 
 sed -i'' 's/^#*PasswordAuthentication [a-z]\{1,9\}$/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 sed -i'' 's/^#*PermitRootLogin [a-z]\{1,9\}$/PermitRootLogin yes/g' /etc/ssh/sshd_config
+sed -i'' 's/^#*GatewayPorts [a-z]\{1,9\}$/GatewayPorts yes/g' /etc/ssh/sshd_config
 sed -i'' 's/^#GSSAPIAuthentication [a-z]\{1,9\}$/GSSAPIAuthentication no/g' /etc/ssh/sshd_config
 sed -i'' 's/^#*UsePAM [a-z]\{1,9\}$/UsePAM no/g' /etc/ssh/sshd_config
  
